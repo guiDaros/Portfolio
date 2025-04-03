@@ -1,0 +1,17 @@
+/* Adicione isso ao seu app.module.css */
+html,
+body {
+  background-color: #e9e9e9; /* Azul escuro */
+  color: white; /* Texto branco para garantir contraste */
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden; /* Impede qualquer scroll lateral */
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
