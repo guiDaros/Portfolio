@@ -107,6 +107,10 @@ const CourseTitle = styled.h4`
 const SecondaryTitle = styled.h3`
   font-family: "Josefin Sans", sans-serif;
   font-size: 34px;
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
 `;
 
 const CourseProvider = styled.p`
@@ -304,7 +308,6 @@ const Academic = () => {
             presentation skills, focusing on voice modulation, body language,
             and audience engagement for confident and impactful delivery.
           </CourseDetails>
-
         </SmallCourseCard>
 
         <SmallCourseCard>

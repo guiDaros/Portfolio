@@ -19,6 +19,14 @@ const FooterContainer = styled.footer`
   color: #fff;
   position: relative;
   bottom: 0;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
 `;
 
 const LeftText = styled.p`

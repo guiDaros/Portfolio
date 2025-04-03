@@ -26,88 +26,118 @@ const ProjectList = styled.div`
   justify-content: center;
   align-items: center;
   gap: 40px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 const ProjectCard = styled.div`
   display: flex;
   gap: 80px;
-
   font-family: "Josefin Sans", sans-serif;
-
   background-color: #004e91;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 75vw;
   height: auto;
+
+  @media (max-width: 480px) {
+    width: 95vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const ImagesCard = styled.img`
   width: 700px;
-  transition: transform 0.5s ease-in-out; /* Animação suave */
+  transition: transform 0.5s ease-in-out;
 
   &:hover {
-    transform: scale(1.03); /* Aumenta 10% no hover */
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 480px) {
+    width: 90vw;
   }
 `;
+
 const CardTextContainer = styled.div`
   margin-top: 20px;
+
+  @media (max-width: 480px) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o botão */
+    text-align: center; /* Garante que o texto também fique centralizado */
+  }
 `;
 
 const ProjectTitle = styled.h3`
   font-size: 34px;
   color: #fff;
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 
 const ProjectDescription = styled.p`
   width: 30vw;
-
   font-size: 20px;
   color: #fff;
-
   margin-bottom: 30px;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+    width: 90vw;
+    margin-top: 30px;
+  }
 `;
 
 const BottomCardContainer = styled.div`
   width: 20vw;
-
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-
   margin-bottom: 20px;
 
+  @media (max-width: 480px) {
+    width: 90vw;
+  }
 `;
 
 const MiniTechCard = styled.div`
   background-color: #979797;
   text-align: center;
-  padding: 5px 10px; /* Adiciona um espaçamento interno */
-  display: inline-block; /* Mantém o tamanho apenas do conteúdo */
-  border-radius: 5px; /* Borda arredondada para um visual mais suave */
-  font-size: 18px; /* Ajusta o tamanho do texto */
-  color: white; /* Cor do texto para contraste */
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
   font-weight: bold;
 `;
 
 const CardButton = styled.a`
-  display: flex;  
-  align-items: center;  
-  justify-content: center;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 34px;
   width: 150px;
   background-color: #84ffc6;
   border-radius: 3px;
-  text-decoration: none;  
-  color: black;  
+  text-decoration: none;
+  color: black;
   font-weight: bold;
-  transition: transform 0.5s ease-in-out; /* Animação suave */
+  transition: transform 0.5s ease-in-out;
 
   &:hover {
-    transform: scale(1.03); /* Aumenta 10% no hover */
+    transform: scale(1.03);
   }
 `;
-
 
 const Projects = () => {
   return (
@@ -137,7 +167,7 @@ const Projects = () => {
               Maintenance & Updates: Provided continuous improvements to ensure
               stability and scalability. By leveraging tools like React,
               Next.js, and TypeScript, along with analytics-driven adjustments,
-              I helped refine the website to maximize its impact
+              I helped refine the website to maximize its impact.
             </ProjectDescription>
             <BottomCardContainer>
               <MiniTechCard>ReactJS</MiniTechCard>
@@ -153,24 +183,6 @@ const Projects = () => {
             </CardButton>
           </CardTextContainer>
         </ProjectCard>
-        {/* <ProjectCard>
-          <ProjectTitle>Projeto 2</ProjectTitle>
-          <ProjectDescription>
-            Um site de portfólio desenvolvido com React e API externa.
-          </ProjectDescription>
-        </ProjectCard>
-        <ProjectCard>
-          <ProjectTitle>Projeto 3</ProjectTitle>
-          <ProjectDescription>
-            Outro projeto que desenvolvi utilizando Next.js e GraphQL.
-          </ProjectDescription>
-        </ProjectCard>
-        <ProjectCard>
-          <ProjectTitle>Projeto 4</ProjectTitle>
-          <ProjectDescription>
-            Aplicação de ecommerce com React e Firebase.
-          </ProjectDescription>
-        </ProjectCard> */}
       </ProjectList>
     </ProjectsSection>
   );

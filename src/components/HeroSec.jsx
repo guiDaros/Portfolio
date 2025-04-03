@@ -11,7 +11,7 @@ const bounceAnimation = keyframes`
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Define a altura do pulo */
+    transform: translateY(-10px);
   }
 `;
 
@@ -28,58 +28,79 @@ const HeroSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  position: relative;
   gap: 80px;
   width: 100vw;
   height: 80vh;
   padding: 60px 20px;
   text-align: center;
   color: white;
+
+  @media (max-width: 768px) {
+    height: 95vh;
+  }
 `;
 
 const HeroTitle = styled.h1`
   font-family: "Boldonse", sans-serif, "Tektur", serif;
   margin-top: 150px;
   font-size: 67px;
-  transition: transform 0.05s ease-out; /* Animação suave */
-  will-change: transform; /* Indica que o transform será alterado */
-
+  transition: transform 0.05s ease-out;
+  will-change: transform;
   color: #0e0e0e;
+
+  @media (max-width: 768px) {
+    font-size: 50px;
+    margin-top: 160px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 50px;
+    margin-top: 160px;
+  }
 `;
 
 const HeroSubtitle = styled.p`
-  font-family: "Tektur", serif; /* Usando Tektur para o subtítulo */
+  font-family: "Tektur", serif;
   font-size: 1.5rem;
   font-weight: 400;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.5;
-
   color: #0e0e0e;
 `;
 
 const ArrowImg = styled.img`
   align-items: center;
   justify-content: center;
+  animation: ${bounceAnimation} 1.2s ease-in-out infinite;
 
-  animation: ${bounceAnimation} 1.2s ease-in-out infinite; /* Aplica a animação */
+  @media (max-width: 768px) {
+    margin-bottom: 27px;
+  }
 `;
 
 const SocialContainer = styled.div`
   position: absolute;
-  left: 0; /* Ajuste a posição conforme necessário */
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 200px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  gap: 20px;
   background-color: #0078cd;
+  padding: 10px;
   border-radius: 0 10px 10px 0;
+
+  @media (max-width: 768px) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    border-radius: 0 0 10px 10px;
+  }
 `;
+
 
 const SocialIcon = styled.img`
   width: 30px;
@@ -95,18 +116,16 @@ const SocialIcon = styled.img`
 const HeroSec = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  // Atualiza a posição do mouse
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({
-        x: e.clientX, // Posição X do mouse
-        y: e.clientY, // Posição Y do mouse
+        x: e.clientX,
+        y: e.clientY,
       });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Remove o evento de mouse quando o componente é desmontado
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
@@ -116,10 +135,10 @@ const HeroSec = () => {
     <HeroWrapper>
       <SocialContainer>
         <a href="https://www.instagram.com/guilherme.vdaros/">
-          <SocialIcon src={Instagram} alt="Facebook" />
+          <SocialIcon src={Instagram} alt="Instagram" />
         </a>
         <a href="https://github.com/guiDaros">
-          <SocialIcon src={Github} alt="Twitter" />
+          <SocialIcon src={Github} alt="Github" />
         </a>
         <a href="https://www.linkedin.com/in/guilherme-vassoller-daros/">
           <SocialIcon src={Linkedin} alt="LinkedIn" />
@@ -129,9 +148,7 @@ const HeroSec = () => {
       <HeroSection>
         <HeroTitle
           style={{
-            transform: `translate(${
-              (mousePosition.x - window.innerWidth / 2) / 65
-            }px, ${(mousePosition.y - window.innerHeight / 2) / 65}px)`,
+            transform: `translate(${(mousePosition.x - window.innerWidth / 2) / 65}px, ${(mousePosition.y - window.innerHeight / 2) / 65}px)`,
           }}
         >
           Guilherme Vassoller Daros
