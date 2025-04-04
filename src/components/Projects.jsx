@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import projectTemplate1 from "../assets/design JR.png";
 
-// Estilos diretamente no arquivo com Styled Components
+// Estilos com Styled Components
 const ProjectsSection = styled.section`
   margin-bottom: 50px;
   display: flex;
@@ -43,11 +43,21 @@ const ProjectCard = styled.div`
   width: 75vw;
   height: auto;
 
-  @media (max-width: 480px) {
+  @media (max-width: 1800px) {
     width: 95vw;
+  }
+
+  @media (max-width: 1300px) {
+    width: 80vw;
+
+    gap: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 480px) {
+    width: 95vw;
   }
 `;
 
@@ -59,6 +69,11 @@ const ImagesCard = styled.img`
     transform: scale(1.03);
   }
 
+  @media (max-width: 1300px) {
+    width: 75vw;
+    
+  }
+
   @media (max-width: 480px) {
     width: 90vw;
   }
@@ -67,12 +82,15 @@ const ImagesCard = styled.img`
 const CardTextContainer = styled.div`
   margin-top: 20px;
 
-  @media (max-width: 480px) {
-    margin-top: 0;
+  @media (max-width: 1300px){
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o botão */
-    text-align: center; /* Garante que o texto também fique centralizado */
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 0;
   }
 `;
 
@@ -91,8 +109,13 @@ const ProjectDescription = styled.p`
   color: #fff;
   margin-bottom: 30px;
 
+  @media (max-width: 1300px) {
+    margin-top: 50px;
+    width: 60vw;
+    font-size: 22px;
+  }
+
   @media (max-width: 480px) {
-    font-size: 20px;
     width: 90vw;
     margin-top: 30px;
   }
@@ -104,6 +127,12 @@ const BottomCardContainer = styled.div`
   flex-wrap: wrap;
   gap: 7px;
   margin-bottom: 20px;
+
+  @media (max-width: 1300px) {
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+  }
 
   @media (max-width: 480px) {
     width: 90vw;
@@ -136,6 +165,11 @@ const CardButton = styled.a`
 
   &:hover {
     transform: scale(1.03);
+  }
+
+  @media (max-width: 1300px) {
+    width: 30vw;
+    
   }
 `;
 
