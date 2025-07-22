@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import projectTemplate1 from "../assets/design JR.png";
 import projectTemplate2 from "../assets/designpadariadaros.png";
+import projectTemplate3 from "../assets/designdevburger.png";
 
 // Estilos com Styled Components
 const ProjectsSection = styled.section`
@@ -257,6 +258,51 @@ const Projects = () => {
               <MiniTechCard>Vite</MiniTechCard>
             </BottomCardContainer>
             <CardButton href="https://padaria-daros-menu.vercel.app/">
+              Visitar Site
+            </CardButton>
+          </CardTextContainer>
+        </ProjectCard>
+
+        <ProjectCard>
+          <a
+            href="https://github.com/guiDaros/Front-end-burger-shop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ImagesCard src={projectTemplate3} />
+          </a>
+          <CardTextContainer>
+            <ProjectTitle>
+              DevBurger / E-commerce – CRUD Completo de Pedidos
+            </ProjectTitle>
+            <ProjectDescription>
+              Aplicação web completa para gerenciamento de pedidos para um
+              gerenciamento profissional, com painel administrativo e interface
+              do cliente. Projeto focado em operações CRUD, autenticação,
+              experiência e segurança do usuário.
+              <br />
+              <br />
+              <strong>Destaques:</strong>
+              <br />
+              - Interface do cliente e painel do administrador separados e
+              seguros
+              <br />
+              - Funcionalidades de login, cadastro, edição e exclusão de
+              produtos e pedidos
+              <br />
+              - Integração com banco de dados e consumo de API RESTful
+              <br />- Design responsivo e usabilidade aprimorada
+            </ProjectDescription>
+            <BottomCardContainer>
+              <MiniTechCard>ReactJS</MiniTechCard>
+              <MiniTechCard>Styled Components</MiniTechCard>
+              <MiniTechCard>TypeScript</MiniTechCard>
+              <MiniTechCard>Node.js</MiniTechCard>
+              <MiniTechCard>MongoDB</MiniTechCard>
+              <MiniTechCard>PostgreSQL</MiniTechCard>
+              <MiniTechCard>JavaScript</MiniTechCard>
+            </BottomCardContainer>
+            <CardButton href="https://github.com/guiDaros/Front-end-burger-shop">
               Visitar Site
             </CardButton>
           </CardTextContainer>

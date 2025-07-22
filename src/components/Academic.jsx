@@ -181,8 +181,8 @@ const Academic = () => {
           </CourseHeader>
           <CourseTags>Ciência da Computação</CourseTags>
           <CourseDetails>
-            Atualmente estou no primeiro semestre do curso de Bacharelado em
-            Ciência da Computação na universidade ATITUS em Passo Fundo, RS.
+            Atualmente estou cursando Ciência da Computação na universidade
+            ATITUS em Passo Fundo, RS.
           </CourseDetails>
         </CourseCard>
 
@@ -215,9 +215,9 @@ const Academic = () => {
           <CourseTags>Inglês</CourseTags>
           <CourseDetails>
             Estudei inglês no CIPEX Idiomas por 10 anos, alcançando proficiência
-            avançada em gramática, conversação, escrita e compreensão.
-            O curso proporcionou uma aprendizagem imersiva, aprimorando minha
-            fluência e habilidades de comunicação.
+            avançada em gramática, conversação, escrita e compreensão. O curso
+            proporcionou uma aprendizagem imersiva, aprimorando minha fluência e
+            habilidades de comunicação.
           </CourseDetails>
         </CourseCard>
 
@@ -228,17 +228,17 @@ const Academic = () => {
           </CourseHeader>
           <CourseTags>Inglês</CourseTags>
           <CourseDetails>
-            Estudei inglês em um programa intensivo da EC English School por 1 mês
-            em Cambridge, Reino Unido, onde atingi o auge da minha proficiência.
-            Essa experiência me permitiu uma imersão total no idioma, praticando
-            diariamente com falantes nativos e aprimorando minhas habilidades
-            comunicativas em situações reais.
+            Estudei inglês em um programa intensivo da EC English School por 1
+            mês em Cambridge, Reino Unido, onde atingi o auge da minha
+            proficiência. Essa experiência me permitiu uma imersão total no
+            idioma, praticando diariamente com falantes nativos e aprimorando
+            minhas habilidades comunicativas em situações reais.
           </CourseDetails>
         </CourseCard>
       </HighlightedCourses>
 
       <SecondaryTitle style={{ color: "#0078cd", marginTop: "20px" }}>
-        Additional courses 
+        Additional courses
       </SecondaryTitle>
       <ComplementaryList>
         <SmallCourseCard>
@@ -281,6 +281,86 @@ const Academic = () => {
 
         <SmallCourseCard>
           <CourseHeader>
+            <CourseTitle>AI and Machine Learning in AgTech</CourseTitle>
+            <CourseProvider>Udemy</CourseProvider>
+          </CourseHeader>
+          <CourseTags>AI, Machine Learning, AgTech, Python</CourseTags>
+          <CourseDetails>
+            Curso sobre aplicação de Inteligência Artificial e Machine Learning
+            no setor agrícola, focado em soluções tecnológicas para otimização e
+            inovação.
+          </CourseDetails>
+          <CertificateButton
+            href="https://www.udemy.com/certificate/UC-fa595722-be35-4d1f-bf55-eb2024ebeb53/"
+            target="_blank"
+          >
+            Acessar Certificado
+          </CertificateButton>
+        </SmallCourseCard>
+
+        <SmallCourseCard>
+          <CourseHeader>
+            <CourseTitle>Bootstrap 5 Avançado</CourseTitle>
+            <CourseProvider>Udemy</CourseProvider>
+          </CourseHeader>
+          <CourseTags>Bootstrap, CSS, Frontend, Design Responsivo</CourseTags>
+          <CourseDetails>
+            Curso avançado de Bootstrap 5, abordando componentes avançados,
+            customização, grid system e melhores práticas para desenvolvimento
+            frontend responsivo.
+          </CourseDetails>
+          <CertificateButton
+            href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-239f7be7-ff5d-4b46-bd10-813dc74c8560.pdf"
+            target="_blank"
+          >
+            Acessar Certificado
+          </CertificateButton>
+        </SmallCourseCard>
+
+        <SmallCourseCard>
+          <CourseHeader>
+            <CourseTitle>Gulp, CSS e JavaScript</CourseTitle>
+            <CourseProvider>Elevor Softwares</CourseProvider>
+          </CourseHeader>
+          <CourseTags>
+            Gulp, CSS, JavaScript, Automação, Frontend, Design Responsivo
+          </CourseTags>
+          <CourseDetails>
+            Curso completo que aborda automação de tarefas com Gulp, fundamentos
+            e técnicas avançadas de CSS, além de JavaScript moderno para
+            desenvolvimento frontend eficiente.
+          </CourseDetails>
+          <CertificateButton
+            href="https://www.linkedin.com/in/guilherme-vassoller-daros/details/certifications/1752284735442/single-media-viewer/?type=DOCUMENT&profileId=ACoAADxQfIsBfHnZ6a-4Hv3gOxp6Zny5V-UTcRc"
+            target="_blank"
+          >
+            Acessar Certificado
+          </CertificateButton>
+        </SmallCourseCard>
+
+        <SmallCourseCard>
+          <CourseHeader>
+            <CourseTitle>
+              Futurismo e Tecnologia Ligados à Criatividade
+            </CourseTitle>
+            <CourseProvider>Even3 - Atitus</CourseProvider>
+          </CourseHeader>
+          <CourseTags>Futurismo, Tecnologia, Criatividade, Inovação</CourseTags>
+          <CourseDetails>
+            Curso que explora as tendências futuristas e o impacto da tecnologia
+            na criatividade e inovação, estimulando novas formas de pensar e
+            criar.
+          </CourseDetails>
+          <CertificateButton
+            href="https://www.linkedin.com/in/guilherme-vassoller-daros/details/certifications/1743209597401/single-media-viewer/?type=IMAGE&profileId=ACoAADxQfIsBfHnZ6a-4Hv3gOxp6Zny5V-UTcRc"
+            target="_blank"
+          >
+            Acessar Certificado
+          </CertificateButton>
+        </SmallCourseCard>
+
+        <SmallCourseCard>
+          <CourseHeader>
             <CourseTitle>Curso de Python</CourseTitle>
             <CourseProvider>Hugo Vasconcelos</CourseProvider>
           </CourseHeader>
@@ -312,9 +392,7 @@ const Academic = () => {
 
         <SmallCourseCard>
           <CourseHeader>
-            <CourseTitle>
-              Curso de React (com Hooks e Redux)
-            </CourseTitle>
+            <CourseTitle>Curso de React (com Hooks e Redux)</CourseTitle>
             <CourseProvider>Andrew Mead</CourseProvider>
           </CourseHeader>
           <CourseTags>React, Redux</CourseTags>
