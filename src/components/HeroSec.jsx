@@ -101,13 +101,12 @@ const SocialContainer = styled.div`
   }
 `;
 
-
 const SocialIcon = styled.img`
   width: 30px;
   height: 30px;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     opacity: 0.7;
     transition: opacity 0.15s ease-in-out;
   }
@@ -148,14 +147,16 @@ const HeroSec = () => {
       <HeroSection>
         <HeroTitle
           style={{
-            transform: `translate(${(mousePosition.x - window.innerWidth / 2) / 65}px, ${(mousePosition.y - window.innerHeight / 2) / 65}px)`,
+            transform: `translate(${
+              (mousePosition.x - window.innerWidth / 2) / 65
+            }px, ${(mousePosition.y - window.innerHeight / 2) / 65}px)`,
           }}
         >
           Guilherme Vassoller Daros
         </HeroTitle>
         <HeroSubtitle>
-          A Result-Oriented Developer building and managing Websites and
-          Applications that lead to the success of overall products.
+          Desenvolvedor orientado a resultados, criando e gerenciando Sites e
+          Aplicações que contribuem para o sucesso dos produtos como um todo.
         </HeroSubtitle>
         <ArrowImg src={Arrow} alt="Seta para baixo" width={40} height={40} />
       </HeroSection>

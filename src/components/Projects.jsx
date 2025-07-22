@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import projectTemplate1 from "../assets/design JR.png";
+import projectTemplate2 from "../assets/designpadariadaros.png";
 
 // Estilos com Styled Components
 const ProjectsSection = styled.section`
@@ -71,7 +72,6 @@ const ImagesCard = styled.img`
 
   @media (max-width: 1300px) {
     width: 75vw;
-    
   }
 
   @media (max-width: 480px) {
@@ -82,7 +82,7 @@ const ImagesCard = styled.img`
 const CardTextContainer = styled.div`
   margin-top: 20px;
 
-  @media (max-width: 1300px){
+  @media (max-width: 1300px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,15 +169,14 @@ const CardButton = styled.a`
 
   @media (max-width: 1300px) {
     width: 30vw;
-    
   }
 `;
-
 const Projects = () => {
   return (
     <ProjectsSection>
-      <Title>Projects</Title>
+      <Title>Projetos</Title>
       <ProjectList>
+        {/* Projeto 1 */}
         <ProjectCard>
           <a
             href="https://mauriciojuniortreinador.com/"
@@ -188,32 +187,77 @@ const Projects = () => {
           </a>
           <CardTextContainer>
             <ProjectTitle>
-              MJ Team – Website & Marketing Optimization
+              MJ Team – Otimização de Site e Marketing
             </ProjectTitle>
             <ProjectDescription>
-              I worked on the development and optimization of the MJ Team
-              website, focusing on improving performance, user experience, and
-              conversion rates. My contributions included: Website Development:
-              Implemented responsive and high-performance pages integrated with
-              APIs. Landing Page Optimization: Applied conversion-focused
-              strategies to enhance user engagement. Technical Enhancements:
-              Improved load speed, SEO structure, and mobile usability.
-              Maintenance & Updates: Provided continuous improvements to ensure
-              stability and scalability. By leveraging tools like React,
-              Next.js, and TypeScript, along with analytics-driven adjustments,
-              I helped refine the website to maximize its impact.
+              Atuei no desenvolvimento e otimização do site da MJ Team, com foco
+              em performance, experiência do usuário e conversão.
+              <br />
+              <br />
+              <strong>Principais entregas:</strong>
+              <br />
+              - Páginas responsivas e de alto desempenho integradas com APIs.
+              <br />
+              - Estratégias de conversão aplicadas em landing pages.
+              <br />
+              - Melhorias em SEO, velocidade de carregamento e usabilidade
+              mobile.
+              <br />
+              - Manutenção contínua para estabilidade e escalabilidade.
+              <br />
+              <br />
+              Utilizei React, Next.js e TypeScript com apoio de dados analíticos
+              para maximizar o impacto do site.
             </ProjectDescription>
             <BottomCardContainer>
               <MiniTechCard>ReactJS</MiniTechCard>
               <MiniTechCard>Git & GitHub</MiniTechCard>
               <MiniTechCard>TypeScript</MiniTechCard>
-              <MiniTechCard>FireBase</MiniTechCard>
+              <MiniTechCard>Firebase</MiniTechCard>
               <MiniTechCard>CSS</MiniTechCard>
               <MiniTechCard>HTML</MiniTechCard>
-              <MiniTechCard>reactjs</MiniTechCard>
             </BottomCardContainer>
             <CardButton href="https://mauriciojuniortreinador.com/">
-              Visit Website
+              Visitar Site
+            </CardButton>
+          </CardTextContainer>
+        </ProjectCard>
+
+        {/* Projeto 2 */}
+        <ProjectCard>
+          <a
+            href="https://padaria-daros-menu.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ImagesCard src={projectTemplate2} />
+          </a>
+          <CardTextContainer>
+            <ProjectTitle>
+              Padaria Daros – Cardápio Digital / Landing Page
+            </ProjectTitle>
+            <ProjectDescription>
+              Criação da página da Padaria Daros para apresentar os produtos de
+              forma profissional, com foco em design moderno, porém tradicional
+              ao mesmo tempo, além de responsividade e performance.
+              <br />
+              <br />
+              <strong>Destaques:</strong>
+              <br />
+              - Interface limpa com React e Styled Components.
+              <br />
+              - Estrutura otimizada para SEO e acessibilidade.
+              <br />- Integração direta com o cardápio e navegação fluida.
+            </ProjectDescription>
+            <BottomCardContainer>
+              <MiniTechCard>ReactJS</MiniTechCard>
+              <MiniTechCard>JavaScript</MiniTechCard>
+              <MiniTechCard>Cloud Storage</MiniTechCard>
+              <MiniTechCard>Firebase</MiniTechCard>
+              <MiniTechCard>Vite</MiniTechCard>
+            </BottomCardContainer>
+            <CardButton href="https://padaria-daros-menu.vercel.app/">
+              Visitar Site
             </CardButton>
           </CardTextContainer>
         </ProjectCard>

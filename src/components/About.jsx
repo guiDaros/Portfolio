@@ -61,21 +61,21 @@ const Paragraph = styled.p`
 const About = () => {
   return (
     <AboutSection>
-      <Title>About Me</Title>
+      <Title>Sobre Mim</Title>
       <Paragraph>
-        I’m a <span>Software Developer</span> passionate about building responsive,
-        user-friendly, problem solving applications.
+        Sou um <span>Desenvolvedor de Software</span> apaixonado por criar aplicações responsivas,
+        amigáveis ao usuário e voltadas à resolução de problemas.
         <br />
         <br />
-        I’ve developed pages with <span>integrated APIs</span> and provide ongoing
-        maintenance for smooth performance. <span>To learn more about my projects and
-        technical skills, feel free to visit the dedicated sections of my
-        portfolio.</span>
+        Desenvolvi páginas com <span>APIs integradas</span> e ofereço manutenção contínua
+        para garantir desempenho suave. <span>Para saber mais sobre meus projetos e
+        habilidades técnicas, fique à vontade para visitar as seções dedicadas do meu
+        portfólio.</span>
         <br />
         <br />
-        Focused on performance optimization and clean, maintainable code, I
-        enjoy collaborating with teams to bring ideas to life and solve
-        challenges. <span>Always eager to grow and deliver high-quality solutions.</span>
+        Focado na otimização de performance e em um código limpo e sustentável, gosto
+        de colaborar com equipes para dar vida a ideias e resolver desafios.
+        <span>Sempre buscando crescer e entregar soluções de alta qualidade.</span>
       </Paragraph>
     </AboutSection>
   );

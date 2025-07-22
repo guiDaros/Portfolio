@@ -172,67 +172,67 @@ const ComplementaryList = styled.div`
 const Academic = () => {
   return (
     <AcademicWrapper>
-      <Title>Academic & Certifieds</Title>
+      <Title>Formação Acadêmica & Certificados</Title>
       <HighlightedCourses>
         <CourseCard>
           <CourseHeader>
-            <CourseTitle>Computer Science</CourseTitle>
-            <CourseProvider>ATITUS Educação </CourseProvider>
+            <CourseTitle>Ciência da Computação</CourseTitle>
+            <CourseProvider>ATITUS Educação</CourseProvider>
           </CourseHeader>
-          <CourseTags>Computer Science</CourseTags>
+          <CourseTags>Ciência da Computação</CourseTags>
           <CourseDetails>
-            I am currently at the first semester of my Bachelor's degree in
-            Computer Science in the university ATITUS in Passo Fundo, RS.
+            Atualmente estou no primeiro semestre do curso de Bacharelado em
+            Ciência da Computação na universidade ATITUS em Passo Fundo, RS.
           </CourseDetails>
         </CourseCard>
 
         <CourseCard>
           <CourseHeader>
-            <CourseTitle>FullStack Developer</CourseTitle>
+            <CourseTitle>Desenvolvedor FullStack</CourseTitle>
             <CourseProvider>DevClub</CourseProvider>
           </CourseHeader>
           <CourseTags>
-            JavaScript, TypeScript, Node, React, Databases, HTML, CSS
+            JavaScript, TypeScript, Node, React, Bancos de Dados, HTML, CSS
           </CourseTags>
           <CourseDetails>
-            Completed the DevClub programming course, covering fundamental and
-            advanced concepts, best coding practices, and real-world project
-            development with FullStack projects.
+            Curso de programação do DevClub concluído, cobrindo conceitos
+            fundamentais e avançados, boas práticas de codificação e
+            desenvolvimento de projetos reais com foco FullStack.
           </CourseDetails>
           <CertificateButton
             href="https://aulas.devclub.com.br/verify/5d7fc5636c75d78390ad142a0ceb5df9aada5e3c"
             target="_blank"
           >
-            Acess Certificate
+            Acessar Certificado
           </CertificateButton>
         </CourseCard>
 
         <CourseCard>
           <CourseHeader>
-            <CourseTitle>Advanced English</CourseTitle>
+            <CourseTitle>Inglês Avançado</CourseTitle>
             <CourseProvider>CIPEX Idiomas</CourseProvider>
           </CourseHeader>
-          <CourseTags>English</CourseTags>
+          <CourseTags>Inglês</CourseTags>
           <CourseDetails>
-            Studied English at Cipex Idiomas for 10 years, achieving advanced
-            proficiency in grammar, conversation, writing, and comprehension.
-            The course provided an immersive learning, enhancing fluency and
-            communication skills.
+            Estudei inglês no CIPEX Idiomas por 10 anos, alcançando proficiência
+            avançada em gramática, conversação, escrita e compreensão.
+            O curso proporcionou uma aprendizagem imersiva, aprimorando minha
+            fluência e habilidades de comunicação.
           </CourseDetails>
         </CourseCard>
 
         <CourseCard>
           <CourseHeader>
-            <CourseTitle>Advanced English</CourseTitle>
+            <CourseTitle>Inglês Avançado</CourseTitle>
             <CourseProvider>EC English School</CourseProvider>
           </CourseHeader>
-          <CourseTags>English</CourseTags>
+          <CourseTags>Inglês</CourseTags>
           <CourseDetails>
-            Studied English at EC English School intensive program for 1 month
-            in Cambridge, UK, where I reached the peak of my English
-            proficiency. This experience allowed me to immerse myself in the
-            language, practice daily with native speakers, and refine my
-            communication skills in real-world situations.
+            Estudei inglês em um programa intensivo da EC English School por 1 mês
+            em Cambridge, Reino Unido, onde atingi o auge da minha proficiência.
+            Essa experiência me permitiu uma imersão total no idioma, praticando
+            diariamente com falantes nativos e aprimorando minhas habilidades
+            comunicativas em situações reais.
           </CourseDetails>
         </CourseCard>
       </HighlightedCourses>
@@ -243,90 +243,90 @@ const Academic = () => {
       <ComplementaryList>
         <SmallCourseCard>
           <CourseHeader>
-            <CourseTitle>Git e GitHub (w/ gist e GitHubPages)</CourseTitle>
+            <CourseTitle>Git e GitHub (com Gist e GitHubPages)</CourseTitle>
             <CourseProvider>Matheus Battisti</CourseProvider>
           </CourseHeader>
           <CourseTags>Versionamento, Git, GitHub</CourseTags>
           <CourseDetails>
-            Git and GitHub from basic to advanced, including version control,
-            branches, pull requests, GitHub Pages, and Gist for practical code
-            sharing.
+            Git e GitHub do básico ao avançado, incluindo controle de versão,
+            branches, pull requests, GitHub Pages e Gist para compartilhamento
+            prático de código.
           </CourseDetails>
           <CertificateButton
             href="https://ude.my/UC-50d0300d-1c81-43e9-a402-ea4b41843d9f"
             target="_blank"
           >
-            Acess Certificate
+            Acessar Certificado
           </CertificateButton>
         </SmallCourseCard>
 
         <SmallCourseCard>
           <CourseHeader>
-            <CourseTitle>TypeScript (w/ React, Express)</CourseTitle>
+            <CourseTitle>TypeScript (com React, Express)</CourseTitle>
             <CourseProvider>Matheus Battisti</CourseProvider>
           </CourseHeader>
           <CourseTags>TypeScript, React, Express</CourseTags>
           <CourseDetails>
-            TypeScript from basic to advanced, applying it in projects with
-            React and Express. Focused on typing, interfaces, generics, and best
-            practices for writing safer and more scalable code.
+            TypeScript do básico ao avançado, aplicado em projetos com React e
+            Express. Foco em tipagem, interfaces, generics e boas práticas para
+            escrever código mais seguro e escalável.
           </CourseDetails>
           <CertificateButton
             href="https://www.udemy.com/certificate/UC-bf0a5a75-cfea-4c11-942a-e5d812b15ead/"
             target="_blank"
           >
-            Acess Certificate
+            Acessar Certificado
           </CertificateButton>
         </SmallCourseCard>
 
         <SmallCourseCard>
           <CourseHeader>
-            <CourseTitle>Python Course</CourseTitle>
+            <CourseTitle>Curso de Python</CourseTitle>
             <CourseProvider>Hugo Vasconcelos</CourseProvider>
           </CourseHeader>
           <CourseTags>Python</CourseTags>
           <CourseDetails>
-            Python fundamentals, covering syntax, data structures, and practical
-            applications.
+            Fundamentos de Python, incluindo sintaxe, estruturas de dados e
+            aplicações práticas.
           </CourseDetails>
           <CertificateButton
             href="https://www.udemy.com/certificate/UC-c9e3cf3f-e77a-4999-bd53-968c91be6bce/"
             target="_blank"
           >
-            Acess Certificate
+            Acessar Certificado
           </CertificateButton>
         </SmallCourseCard>
 
         <SmallCourseCard>
           <CourseHeader>
-            <CourseTitle>Oratory Course</CourseTitle>
+            <CourseTitle>Curso de Oratória</CourseTitle>
             <CourseProvider>Bespeak</CourseProvider>
           </CourseHeader>
-          <CourseTags>Comunication, Oratory, Team Work</CourseTags>
+          <CourseTags>Comunicação, Oratória, Trabalho em Equipe</CourseTags>
           <CourseDetails>
-            Completed an intensive course on public speaking, communication, and
-            presentation skills, focusing on voice modulation, body language,
-            and audience engagement for confident and impactful delivery.
+            Curso intensivo de oratória, comunicação e apresentação, com foco em
+            modulação de voz, linguagem corporal e engajamento da audiência para
+            apresentações confiantes e impactantes.
           </CourseDetails>
         </SmallCourseCard>
 
         <SmallCourseCard>
           <CourseHeader>
             <CourseTitle>
-              React Developer Course (w/ Hooks and Redux)
+              Curso de React (com Hooks e Redux)
             </CourseTitle>
             <CourseProvider>Andrew Mead</CourseProvider>
           </CourseHeader>
           <CourseTags>React, Redux</CourseTags>
           <CourseDetails>
-            React, working with Hooks, Redux, and building modern, scalable
-            applications
+            Curso de React, utilizando Hooks, Redux e construção de aplicações
+            modernas e escaláveis.
           </CourseDetails>
           <CertificateButton
             href="https://www.udemy.com/certificate/UC-6fd5aa74-4d23-4eb7-a255-264157dffad5/"
             target="_blank"
           >
-            Acess Certificate
+            Acessar Certificado
           </CertificateButton>
         </SmallCourseCard>
       </ComplementaryList>

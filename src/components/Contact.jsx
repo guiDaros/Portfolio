@@ -52,7 +52,7 @@ const IconLink = styled.a`
 `;
 
 const IconImage = styled.img`
-  width: 30px; /* Ajuste o tamanho conforme necessário */
+  width: 30px; 
   height: 30px;
 `;
 
@@ -60,9 +60,9 @@ const Contact = () => {
   return (
     <FooterContainer>
       <LeftText>
-        &copy; {new Date().getFullYear()} All rights reserved.
+        &copy; {new Date().getFullYear()} Todos os direitos reservados.
       </LeftText>
-      <CenterText>Contact With: guilhermevassoller@gmail.com</CenterText>
+      <CenterText>Contato: guivdaros@gmail.com</CenterText>
       <IconsContainer>
         <IconLink
           href="https://www.linkedin.com/in/guilherme-vassoller-daros/"
