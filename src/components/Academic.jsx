@@ -238,7 +238,7 @@ const Academic = () => {
       </HighlightedCourses>
 
       <SecondaryTitle style={{ color: "#0078cd", marginTop: "20px" }}>
-        Cursos Complementares
+        Additional courses 
       </SecondaryTitle>
       <ComplementaryList>
         <SmallCourseCard>
